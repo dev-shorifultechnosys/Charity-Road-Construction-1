@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="منصة تبرعات لبناء وصيانة الطرق العامة بوضوح وشفافية، مع مشاريع موثقة ولوحة تقارير للمانحين." />
+  <title>Ways of Hope — Charity Road Construction</title>
+
+  <!-- Premium Arabic + English fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;600;700;800&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&family=Manrope:wght@500;600;700;800&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header" id="top">
+    <nav class="nav shell" aria-label="Main navigation">
+      <a class="brand" href="#top" aria-label="Ways of Hope home">
+        <span class="brand-mark">ر</span>
+        <span>
+          <strong data-ar="رُؤى الأمل" data-en="Ways of Hope">رُؤى الأمل</strong>
+          <small data-ar="منصة بناء الطرق" data-en="Road charity platform">منصة بناء الطرق</small>
+        </span>
+      </a>
+
+      <button class="mobile-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+
+      <div class="nav-links">
+        <a href="#mission" data-ar="قصتنا" data-en="Mission">قصتنا</a>
+        <a href="#impact" data-ar="الأثر" data-en="Impact">الأثر</a>
+        <a href="#projects" data-ar="المشاريع" data-en="Projects">المشاريع</a>
+        <a href="#reports" data-ar="التقارير" data-en="Reports">التقارير</a>
+        <a href="#contact" data-ar="تواصل" data-en="Contact">تواصل</a>
+      </div>
+
+      <div class="nav-actions">
+        <button class="lang-btn" id="langToggle" type="button">English</button>
+        <a class="btn btn-dark" href="#donate" data-ar="تبرع الآن" data-en="Donate now">تبرع الآن</a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero section-dark">
+      <div class="hero-bg" aria-hidden="true"></div>
+      <div class="shell hero-grid">
+        <aside class="donation-card glass-card reveal">
+          <span class="mini-label" data-ar="نموذج تبرع آمن" data-en="Secure donation form">نموذج تبرع آمن</span>
+          <h3 data-ar="$428K" data-en="$428K">$428K</h3>
+          <p data-ar="تم جمعها للطرق العامة" data-en="Raised for public roads">تم جمعها للطرق العامة</p>
+
+          <label data-ar="اختر المشروع" data-en="Choose project">اختر المشروع</label>
+          <select>
+            <option data-ar="طريق الوادي الريفي" data-en="Rural Valley Road">طريق الوادي الريفي</option>
+            <option data-ar="ممر المدرسة الآمن" data-en="Safe School Corridor">ممر المدرسة الآمن</option>
+          </select>
+
+          <label data-ar="مبلغ التبرع" data-en="Donation amount">مبلغ التبرع</label>
+          <div class="amounts">
+            <button>$25</button><button>$50</button><button class="active">$100</button><button>$250</button>
+          </div>
+          <input type="text" placeholder="Custom amount" data-placeholder-ar="مبلغ مخصص" data-placeholder-en="Custom amount" />
+          <div class="pay-badges"><span>Visa</span><span>Apple Pay</span><span>Google Pay</span></div>
+          <a href="#donate" class="btn btn-gold full" data-ar="متابعة الدفع الآمن" data-en="Continue secure payment">متابعة الدفع الآمن</a>
+          <small data-ar="النموذج تجريبي، ويمكن ربطه لاحقاً بـ Stripe أو Tap أو PayTabs." data-en="Demo form, ready to connect with Stripe, Tap, or PayTabs.">النموذج تجريبي، ويمكن ربطه لاحقاً بـ Stripe أو Tap أو PayTabs.</small>
+        </aside>
+
+        <div class="hero-copy reveal delay-1">
+          <span class="eyebrow" data-ar="تمويل شفاف لبناء وصيانة الطرق العامة" data-en="Transparent road construction funding">تمويل شفاف لبناء وصيانة الطرق العامة</span>
+          <h1 data-ar="نبني طرقاً تصل الناس بالخدمات والفرص." data-en="Building roads. Connecting futures.">نبني طرقاً تصل الناس بالخدمات والفرص.</h1>
+          <p data-ar="منصة تبرعات حديثة تساعد الداعمين على تمويل مشاريع الطرق، متابعة التقدم، ورؤية الأثر الحقيقي على المجتمعات." data-en="A modern donation platform helping supporters fund road projects, track progress, and see real impact in communities.">منصة تبرعات حديثة تساعد الداعمين على تمويل مشاريع الطرق، متابعة التقدم، ورؤية الأثر الحقيقي على المجتمعات.</p>
+          <div class="hero-actions">
+            <a class="btn btn-gold" href="#donate" data-ar="تبرع الآن" data-en="Donate now">تبرع الآن</a>
+            <a class="btn btn-light" href="#projects" data-ar="استعرض المشاريع" data-en="Explore projects">استعرض المشاريع</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="shell stats-bar hero-stat-cards reveal delay-2" aria-label="Platform statistics">
+        <div><i>🛣️</i><strong>42km</strong><span data-ar="طرق تم إنشاؤها وصيانتها" data-en="Roads built & maintained">طرق تم إنشاؤها وصيانتها</span></div>
+        <div><i>🤝</i><strong>11,840+</strong><span data-ar="مانح حول العالم" data-en="Donors worldwide">مانح حول العالم</span></div>
+        <div><i>💚</i><strong>$428K</strong><span data-ar="إجمالي التبرعات" data-en="Total donations">إجمالي التبرعات</span></div>
+        <div><i>📍</i><strong>7</strong><span data-ar="مشاريع نشطة" data-en="Active projects">مشاريع نشطة</span></div>
+      </div>
+    </section>
+
+    <section class="trust-strip shell reveal" aria-label="Trust badges">
+      <div>🔒 <span data-ar="SSL آمن" data-en="Secure SSL">SSL آمن</span></div>
+      <div>📊 <span data-ar="تقارير مدققة" data-en="Audited reports">تقارير مدققة</span></div>
+      <div>💳 <span data-ar="مدفوعات آمنة" data-en="Secure payments">مدفوعات آمنة</span></div>
+      <div>🌍 <span data-ar="أثر مجتمعي" data-en="Community impact">أثر مجتمعي</span></div>
+    </section>
+
+    <!-- MISSION -->
+    <section class="split-section mission-upgrade shell" id="mission">
+      <div class="section-copy reveal delay-1">
+        <span class="eyebrow" data-ar="رؤيتنا ورسالتنا" data-en="Our mission">رؤيتنا ورسالتنا</span>
+        <h2 data-ar="الطريق ليس إسفلتاً فقط؛ إنه وصول إلى المدرسة والعمل والرعاية الصحية." data-en="A road is more than asphalt; it is access to school, work, and healthcare.">الطريق ليس إسفلتاً فقط؛ إنه وصول إلى المدرسة والعمل والرعاية الصحية.</h2>
+        <p data-ar="نربط التبرعات بمشاريع واضحة، ميزانيات مفصلة، صور ميدانية، ونسب تقدم تجعل المانح يعرف أين ذهب دعمه بالضبط." data-en="We connect donations to transparent projects with detailed budgets, field photos, and progress indicators so donors know exactly where support goes.">نربط التبرعات بمشاريع واضحة، ميزانيات مفصلة، صور ميدانية، ونسب تقدم تجعل المانح يعرف أين ذهب دعمه بالضبط.</p>
+        <div class="mission-points">
+          <span>🛡️ <b data-ar="شفافية" data-en="Transparency">شفافية</b></span>
+          <span>🌱 <b data-ar="استدامة" data-en="Sustainability">استدامة</b></span>
+          <span>👥 <b data-ar="أثر مجتمعي" data-en="Community focus">أثر مجتمعي</b></span>
+          <span>✅ <b data-ar="نزاهة" data-en="Integrity">نزاهة</b></span>
+        </div>
+      </div>
+      <div class="video-card reveal">
+        <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1400&q=85" alt="Road paving machinery and workers" />
+        <button type="button" class="play-button" aria-label="Play impact video">▶</button>
+        <div class="video-caption"><strong data-ar="شاهد أثر المشاريع" data-en="Watch our impact">شاهد أثر المشاريع</strong><span data-ar="فيديو تعريفي" data-en="Intro video">فيديو تعريفي</span></div>
+      </div>
+    </section>
+
+    <!-- IMPACT -->
+    <section class="impact-section" id="impact">
+      <div class="shell center-copy reveal">
+        <span class="eyebrow" data-ar="الأثر المباشر" data-en="Direct impact">الأثر المباشر</span>
+        <h2 data-ar="كل مساهمة تتحول إلى وصول أسهل وحياة أكثر أماناً." data-en="Every donation becomes safer access and stronger daily life.">كل مساهمة تتحول إلى وصول أسهل وحياة أكثر أماناً.</h2>
+        <p class="section-subtitle" data-ar="حوّل تبرعك إلى أمتار طريق، مسارات آمنة، وصيانة تحفظ أثر المشروع لسنوات." data-en="Turn your donation into meters of road, safer routes, and maintenance that protects the project for years.">حوّل تبرعك إلى أمتار طريق، مسارات آمنة، وصيانة تحفظ أثر المشروع لسنوات.</p>
+      </div>
+      <div class="shell impact-grid">
+        <article class="impact-card reveal"><strong>$100</strong><h3 data-ar="5 أمتار من الطريق" data-en="5 meters of road">5 أمتار من الطريق</h3><p data-ar="يدعم تجهيزات السلامة الأولية." data-en="Supports basic safety preparation.">يدعم تجهيزات السلامة الأولية.</p></article>
+        <article class="impact-card reveal delay-1"><strong>$500</strong><h3 data-ar="دعم مسار قرية" data-en="Village route support">دعم مسار قرية</h3><p data-ar="يساعد على فتح طريق يربط السكان بالخدمات." data-en="Helps open a route that connects residents to services.">يساعد على فتح طريق يربط السكان بالخدمات.</p></article>
+        <article class="impact-card reveal delay-2"><strong>$1,000</strong><h3 data-ar="صيانة مجتمعية" data-en="Community maintenance">صيانة مجتمعية</h3><p data-ar="يغطي جزءاً من صيانة الطريق بعد التنفيذ." data-en="Covers part of post-construction maintenance.">يغطي جزءاً من صيانة الطريق بعد التنفيذ.</p></article>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="timeline-section shell">
+      <div class="center-copy reveal">
+        <span class="eyebrow" data-ar="كيف يعمل النظام" data-en="How it works">كيف يعمل النظام</span>
+        <h2 data-ar="من التبرع إلى التقرير العام في أربع خطوات." data-en="From donation to public reporting in four clear steps.">من التبرع إلى التقرير العام في أربع خطوات.</h2>
+      </div>
+      <div class="timeline reveal delay-1">
+        <article><span>01</span><h3 data-ar="تبرع" data-en="Donate">تبرع</h3><p data-ar="اختر المشروع والمبلغ وطريقة الدفع." data-en="Choose project, amount, and payment method.">اختر المشروع والمبلغ وطريقة الدفع.</p></article>
+        <article><span>02</span><h3 data-ar="تمويل" data-en="Funding">تمويل</h3><p data-ar="تظهر المساهمات في عداد المشروع." data-en="Contributions appear in the project meter.">تظهر المساهمات في عداد المشروع.</p></article>
+        <article><span>03</span><h3 data-ar="تنفيذ" data-en="Construction">تنفيذ</h3><p data-ar="صور وتحديثات ميدانية أثناء العمل." data-en="Field photos and construction updates.">صور وتحديثات ميدانية أثناء العمل.</p></article>
+        <article><span>04</span><h3 data-ar="تقرير" data-en="Report">تقرير</h3><p data-ar="تقارير مالية قابلة للتصدير للمدققين." data-en="Exportable financial reports for auditors.">تقارير مالية قابلة للتصدير للمدققين.</p></article>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section class="projects-section shell" id="projects">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-ar="مشاريع الطرق" data-en="Road projects">مشاريع الطرق</span>
+        <h2 data-ar="تبرع لمشروع محدد وشاهد التقدم بوضوح." data-en="Donate to a specific project and see clear progress.">تبرع لمشروع محدد وشاهد التقدم بوضوح.</h2>
+        <p class="section-subtitle" data-ar="كل بطاقة تعرض الهدف، المبلغ المحصّل، الأيام المتبقية، ونسبة التنفيذ حتى يرى المانح الصورة كاملة." data-en="Each project shows its goal, raised amount, days left, and construction progress so donors see the full picture.">كل بطاقة تعرض الهدف، المبلغ المحصّل، الأيام المتبقية، ونسبة التنفيذ حتى يرى المانح الصورة كاملة.</p>
+      </div>
+      <div class="project-grid project-grid-three">
+        <article class="project-card reveal">
+          <img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=85" alt="Road construction machinery paving a rural route" />
+          <div class="card-body"><span class="status" data-ar="قيد التنفيذ" data-en="In progress">قيد التنفيذ</span><h3 data-ar="طريق الوادي الريفي" data-en="Rural Valley Road">طريق الوادي الريفي</h3><p data-ar="يربط أربع قرى بالمركز الصحي والسوق الرئيسي." data-en="Connects four villages to the health center and main market.">يربط أربع قرى بالمركز الصحي والسوق الرئيسي.</p><div class="progress-line"><b>64%</b><span><i style="width:64%"></i></span></div><div class="project-metrics"><div><strong>$120K</strong><small data-ar="الهدف" data-en="Goal">الهدف</small></div><div><strong>$84.5K</strong><small data-ar="تم جمعه" data-en="Raised">تم جمعه</small></div><div><strong>45</strong><small data-ar="يوماً" data-en="Days left">يوماً</small></div></div><a href="#donate" class="details-link" data-ar="عرض التفاصيل" data-en="View details">عرض التفاصيل</a></div>
+        </article>
+        <article class="project-card reveal delay-1">
+          <img src="https://images.unsplash.com/photo-1500534314209-a25ddb2bd429?auto=format&fit=crop&w=1200&q=85" alt="Remote mountain road under improvement" />
+          <div class="card-body"><span class="status" data-ar="صيانة" data-en="Maintenance">صيانة</span><h3 data-ar="ممر المدرسة الآمن" data-en="Safe School Corridor">ممر المدرسة الآمن</h3><p data-ar="تأمين مسار يومي للطلاب خلال موسم الأمطار." data-en="Securing a daily school route during rainy seasons.">تأمين مسار يومي للطلاب خلال موسم الأمطار.</p><div class="progress-line"><b>72%</b><span><i style="width:72%"></i></span></div><div class="project-metrics"><div><strong>$48K</strong><small data-ar="الهدف" data-en="Goal">الهدف</small></div><div><strong>$31.7K</strong><small data-ar="تم جمعه" data-en="Raised">تم جمعه</small></div><div><strong>22</strong><small data-ar="يوماً" data-en="Days left">يوماً</small></div></div><a href="#donate" class="details-link" data-ar="عرض التفاصيل" data-en="View details">عرض التفاصيل</a></div>
+        </article>
+        <article class="project-card reveal delay-2">
+          <img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1200&q=85" alt="Unpaved rural road before maintenance" />
+          <div class="card-body"><span class="status" data-ar="جديد" data-en="New">جديد</span><h3 data-ar="ربط السوق المركزي" data-en="Central Market Link">ربط السوق المركزي</h3><p data-ar="تحسين وصول الموردين والمزارعين إلى السوق." data-en="Improves access for suppliers and farmers to the market.">تحسين وصول الموردين والمزارعين إلى السوق.</p><div class="progress-line"><b>41%</b><span><i style="width:41%"></i></span></div><div class="project-metrics"><div><strong>$75K</strong><small data-ar="الهدف" data-en="Goal">الهدف</small></div><div><strong>$22.9K</strong><small data-ar="تم جمعه" data-en="Raised">تم جمعه</small></div><div><strong>60</strong><small data-ar="يوماً" data-en="Days left">يوماً</small></div></div><a href="#donate" class="details-link" data-ar="عرض التفاصيل" data-en="View details">عرض التفاصيل</a></div>
+        </article>
+      </div>
+      <div class="center-actions"><a href="#projects" class="btn btn-outline" data-ar="عرض جميع المشاريع" data-en="View all projects">عرض جميع المشاريع</a></div>
+    </section>
+
+    <!-- TRANSPARENCY -->
+    <section class="transparency section-dark">
+      <div class="shell transparency-grid">
+        <div class="reveal">
+          <span class="eyebrow" data-ar="شفافية مالية" data-en="Financial transparency">شفافية مالية</span>
+          <h2 data-ar="كل تبرع تساهم به يصنع فرقاً حقيقياً." data-en="Every secure donation creates real change.">كل تبرع تساهم به يصنع فرقاً حقيقياً.</h2>
+          <p data-ar="لوحة إدارة واضحة تعرض الحملات، المانحين، المدفوعات، التقارير، وسجلات الصرف بطريقة جاهزة للمراجعة." data-en="A clear admin dashboard shows campaigns, donors, payments, reports, and spending logs ready for review.">لوحة إدارة واضحة تعرض الحملات، المانحين، المدفوعات، التقارير، وسجلات الصرف بطريقة جاهزة للمراجعة.</p>
+        </div>
+        <div class="feature-grid reveal delay-1">
+          <span data-ar="تقارير المدققين" data-en="Auditor reports">تقارير المدققين</span>
+          <span data-ar="تفاصيل التكلفة" data-en="Cost breakdowns">تفاصيل التكلفة</span>
+          <span data-ar="سجلات الصرف" data-en="Spending logs">سجلات الصرف</span>
+          <span data-ar="تصدير CSV/PDF" data-en="CSV/PDF export">تصدير CSV/PDF</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- DONATION BUILDER -->
+    <section class="donation-builder shell" id="donate-form">
+      <div class="donate-panel reveal">
+        <div class="donate-amounts">
+          <span class="eyebrow" data-ar="تبرع الآن" data-en="Make a donation">تبرع الآن</span>
+          <h2 data-ar="اختر المبلغ والمشروع وطريقة الدفع في خطوة واضحة." data-en="Choose amount, project, and payment method in one clear step.">اختر المبلغ والمشروع وطريقة الدفع في خطوة واضحة.</h2>
+          <div class="amount-selector"><button>$25</button><button class="active">$50</button><button>$100</button><button>$250</button><button data-ar="مبلغ آخر" data-en="Other">مبلغ آخر</button></div>
+          <label class="switch-row"><input type="checkbox" /> <span data-ar="تبرع شهري" data-en="Make it monthly">تبرع شهري</span></label>
+          <div class="big-amount"><span>$</span><strong>50</strong><em>USD</em></div>
+          <a href="#contact" class="btn btn-gold full" data-ar="تبرع بأمان الآن" data-en="Donate securely now">تبرع بأمان الآن</a>
+          <small>🔒 SSL Secure &nbsp; • &nbsp; PCI DSS Compliant</small>
+        </div>
+        <div class="card-form">
+          <span class="eyebrow" data-ar="اختر طريقة الدفع" data-en="Choose payment method">اختر طريقة الدفع</span>
+          <div class="method-grid">
+            <button>💳 <span data-ar="بطاقة ائتمان" data-en="Credit Card">بطاقة ائتمان</span></button>
+            <button> Pay</button><button><span class="g-colored">G</span> Pay</button><button>🏦 <span data-ar="تحويل بنكي" data-en="Bank Transfer">تحويل بنكي</span></button>
+          </div>
+          <div class="form-grid">
+            <label><span data-ar="رقم البطاقة" data-en="Card number">رقم البطاقة</span><input value="1234 5678 9012 3456" /></label>
+            <label><span data-ar="اسم صاحب البطاقة" data-en="Name on card">اسم صاحب البطاقة</span><input value="Full Name" /></label>
+            <label><span data-ar="تاريخ الانتهاء" data-en="Expiry date">تاريخ الانتهاء</span><input value="MM / YY" /></label>
+            <label><span>CVV</span><input value="123" /></label>
+          </div>
+          <p data-ar="يتم إرسال إيصال تلقائي بعد الدفع مباشرة." data-en="Automatic receipt is sent immediately after payment.">يتم إرسال إيصال تلقائي بعد الدفع مباشرة.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECURE PAYMENT / TRUST -->
+    <section class="secure-payment shell" id="donate">
+      <div class="secure-card reveal">
+        <div class="payment-brand-panel">
+          <span class="eyebrow" data-ar="طرق دفع موثوقة" data-en="Trusted payment methods">طرق دفع موثوقة</span>
+          <div class="payment-logos brand-logos" aria-label="Accepted payments">
+            <span class="logo-visa" aria-label="Visa"><b>VISA</b></span>
+            <span class="logo-mastercard" aria-label="Mastercard"><i></i><b>mastercard</b></span>
+            <span class="logo-apple" aria-label="Apple Pay"><b> Pay</b></span>
+            <span class="logo-gpay" aria-label="Google Pay"><b><em>G</em> Pay</b></span>
+            <span class="logo-stripe" aria-label="Stripe"><b>stripe</b></span>
+            <span class="logo-tap" aria-label="Tap"><i></i><b>tap</b></span>
+          </div>
+          <a class="btn btn-gold full" href="#contact" data-ar="تبرع الآن" data-en="Donate now">تبرع الآن</a>
+          <small data-ar="دفع آمن ومشفّر بنسبة 100%" data-en="100% encrypted secure payment">دفع آمن ومشفّر بنسبة 100%</small>
+        </div>
+
+        <div class="secure-copy">
+          <span class="eyebrow" data-ar="نظام حماية متكامل" data-en="Complete security system">نظام حماية متكامل</span>
+          <h2 data-ar="تابع كل دولار من التبرع إلى التنفيذ." data-en="Track every dollar from donation to delivery.">تابع كل دولار من التبرع إلى التنفيذ.</h2>
+          <ul class="secure-list">
+            <li data-ar="دفع آمن وسريع ومضمون" data-en="Fast, secure, verified payment">دفع آمن وسريع ومضمون</li>
+            <li data-ar="تحديثات دورية على المشروع" data-en="Recurring project updates">تحديثات دورية على المشروع</li>
+            <li data-ar="تقارير تفصيلية وشفافة" data-en="Detailed transparent reports">تقارير تفصيلية وشفافة</li>
+            <li data-ar="إيصال فوري للتبرع" data-en="Instant donation receipt">إيصال فوري للتبرع</li>
+            <li data-ar="دعم مشاريع مستدامة" data-en="Support sustainable projects">دعم مشاريع مستدامة</li>
+            <li data-ar="أمان كامل لبياناتك" data-en="Full donor data protection">أمان كامل لبياناتك</li>
+          </ul>
+        </div>
+
+        <div class="shield-visual" aria-hidden="true">
+          <div class="shield">🔒</div>
+          <span class="coin coin-a">✓</span>
+          <span class="coin coin-b">$</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- REPORTS -->
+    <section class="reports-section shell" id="reports">
+      <div class="center-copy reveal">
+        <span class="eyebrow" data-ar="لوحة الإدارة" data-en="Admin panel">لوحة الإدارة</span>
+        <h2 data-ar="تحليلات التبرعات والتقارير في مكان واحد." data-en="Donation analytics and reports in one place.">تحليلات التبرعات والتقارير في مكان واحد.</h2>
+      </div>
+      <div class="dashboard-card reveal delay-1">
+        <div class="kpis">
+          <div><span data-ar="هذا الشهر" data-en="This month">هذا الشهر</span><strong>$38,940</strong></div>
+          <div><span data-ar="إجمالي التبرعات" data-en="Total donations">إجمالي التبرعات</span><strong>$428,320</strong></div>
+          <div><span data-ar="مشاريع نشطة" data-en="Active projects">مشاريع نشطة</span><strong>18</strong></div>
+          <div><span data-ar="المانحون" data-en="Donors">المانحون</span><strong>11,840</strong></div>
+        </div>
+        <div class="chart" aria-label="Donation chart"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+      </div>
+      <div class="accountability-grid reveal delay-2">
+        <article class="donut-card">
+          <div class="donut" aria-hidden="true"><span data-ar="أين يذهب تبرعك" data-en="Where funds go">أين يذهب تبرعك</span></div>
+          <ul class="fund-list">
+            <li><i style="background:#057a65"></i><span data-ar="إنشاء الطرق" data-en="Road construction">إنشاء الطرق</span><b>55%</b></li>
+            <li><i style="background:#0f9f8d"></i><span data-ar="الصيانة" data-en="Maintenance">الصيانة</span><b>25%</b></li>
+            <li><i style="background:#69b34c"></i><span data-ar="الهندسة والتخطيط" data-en="Engineering & planning">الهندسة والتخطيط</span><b>10%</b></li>
+            <li><i style="background:#f9a620"></i><span data-ar="برامج المجتمع" data-en="Community programs">برامج المجتمع</span><b>5%</b></li>
+            <li><i style="background:#b56576"></i><span data-ar="الإدارة" data-en="Administration">الإدارة</span><b>5%</b></li>
+          </ul>
+        </article>
+        <article class="report-list-card">
+          <h3 data-ar="التقارير المالية السنوية" data-en="Annual financial reports">التقارير المالية السنوية</h3>
+          <p data-ar="ملفات قابلة للتحميل للمدققين والمانحين." data-en="Downloadable files for auditors and donors.">ملفات قابلة للتحميل للمدققين والمانحين.</p>
+          <a href="#">📄 <span data-ar="تقرير 2023 السنوي" data-en="Annual Report 2023">تقرير 2023 السنوي</span> ⬇</a>
+          <a href="#">📄 <span data-ar="تقرير 2022 السنوي" data-en="Annual Report 2022">تقرير 2022 السنوي</span> ⬇</a>
+          <a href="#">📄 <span data-ar="تقرير 2021 السنوي" data-en="Annual Report 2021">تقرير 2021 السنوي</span> ⬇</a>
+          <button type="button" class="btn btn-dark full" data-ar="عرض كل التقارير" data-en="View all reports">عرض كل التقارير</button>
+        </article>
+      </div>
+    </section>
+
+    <!-- BEFORE AFTER -->
+    <section class="before-after shell">
+      <div class="center-copy reveal">
+        <span class="eyebrow" data-ar="قبل وبعد" data-en="Before and after">قبل وبعد</span>
+        <h2 data-ar="نتائج واضحة على حياة الناس." data-en="Visible results in people’s daily lives.">نتائج واضحة على حياة الناس.</h2>
+        <p class="section-subtitle" data-ar="شاهد كيف تتحول الطرق الصعبة إلى وصول آمن للمدارس والأسواق والرعاية الصحية." data-en="See how difficult routes become safer access to schools, markets, and healthcare.">شاهد كيف تتحول الطرق الصعبة إلى وصول آمن للمدارس والأسواق والرعاية الصحية.</p>
+      </div>
+      <div class="ba-grid">
+        <figure class="reveal"><img src="https://images.unsplash.com/photo-1519003722824-194d4455a60c?auto=format&fit=crop&w=1200&q=85" alt="Rough rural road before maintenance"><figcaption data-ar="قبل" data-en="Before">قبل</figcaption></figure>
+        <figure class="reveal delay-1"><img src="https://images.unsplash.com/photo-1541888946425-d81bb19240f5?auto=format&fit=crop&w=1200&q=85" alt="Finished paved road after completion"><figcaption data-ar="بعد" data-en="After">بعد</figcaption></figure>
+      </div>
+    </section>
+
+    <!-- TESTIMONIALS -->
+    <section class="testimonials shell">
+      <article class="quote reveal"><p data-ar="أصبح وصول الطلاب إلى المدرسة أكثر أماناً بعد تحسين الطريق." data-en="Student access to school became safer after the road was improved.">أصبح وصول الطلاب إلى المدرسة أكثر أماناً بعد تحسين الطريق.</p><strong data-ar="قائد مجتمع" data-en="Community leader">قائد مجتمع</strong></article>
+      <article class="quote reveal delay-1"><p data-ar="أرى تقريراً واضحاً لكل تبرع، وهذا يمنحني ثقة أكبر." data-en="I can see clear reports for every donation, which gives me more confidence.">أرى تقريراً واضحاً لكل تبرع، وهذا يمنحني ثقة أكبر.</p><strong data-ar="مانح شهري" data-en="Monthly donor">مانح شهري</strong></article>
+    </section>
+
+    <section class="final-cta shell" id="contact">
+      <div class="reveal">
+        <span class="eyebrow" data-ar="جاهز للانطلاق؟" data-en="Ready to launch?">جاهز للانطلاق؟</span>
+        <h2 data-ar="جاهز لإطلاق منصة تبرع موثوقة؟" data-en="Ready to launch a trusted donation platform?">جاهز لإطلاق منصة تبرع موثوقة؟</h2>
+        <p data-ar="انضم إلينا اليوم وكن جزءاً من بناء الطرق التي تغيّر حياة الناس. التصميم جاهز كواجهة HTML/CSS/JS ويمكن تحويله لاحقاً إلى WordPress أو Laravel مع لوحة إدارة حقيقية." data-en="Join today and become part of building roads that change lives. This HTML/CSS/JS interface is ready to convert into WordPress or Laravel with a real admin panel.">انضم إلينا اليوم وكن جزءاً من بناء الطرق التي تغيّر حياة الناس. التصميم جاهز كواجهة HTML/CSS/JS ويمكن تحويله لاحقاً إلى WordPress أو Laravel مع لوحة إدارة حقيقية.</p>
+      </div>
+      <div class="final-cta-actions reveal delay-1">
+        <a class="btn btn-gold" href="#donate" data-ar="تبرع الآن" data-en="Donate now">تبرع الآن</a>
+        <a class="btn btn-dark" href="mailto:hello@example.com" data-ar="تواصل معنا" data-en="Contact us">تواصل معنا</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer section-dark">
+    <div class="shell footer-grid footer-grid-rich">
+      <div class="footer-about">
+        <a class="brand footer-brand" href="#top"><span class="brand-mark">ر</span><span><strong data-ar="رُؤى الأمل" data-en="Ways of Hope">رُؤى الأمل</strong><small data-ar="منصة بناء الطرق" data-en="Road charity platform">منصة بناء الطرق</small></span></a>
+        <p data-ar="منصة غير ربحية لتمويل بناء وصيانة الطرق العامة وربط المجتمعات بالخدمات والفرص." data-en="A not-for-profit platform funding public road construction and maintenance while connecting communities to services and opportunities.">منصة غير ربحية لتمويل بناء وصيانة الطرق العامة وربط المجتمعات بالخدمات والفرص.</p>
+        <div class="footer-certificates" aria-label="Trust certificates"><span>SSL Secure</span><span>Verified NGO</span><span>Audited</span><span>Transparency</span></div>
+      </div>
+      <div><h4 data-ar="روابط سريعة" data-en="Quick links">روابط سريعة</h4><a href="#mission" data-ar="قصتنا" data-en="Mission">قصتنا</a><a href="#projects" data-ar="المشاريع" data-en="Projects">المشاريع</a><a href="#reports" data-ar="التقارير" data-en="Reports">التقارير</a><a href="#donate" data-ar="تبرع" data-en="Donate">تبرع</a></div>
+      <div><h4 data-ar="تواصل معنا" data-en="Get in touch">تواصل معنا</h4><a href="tel:+15551234567">+1 (555) 123-4567</a><a href="mailto:info@roadcharity.org">info@roadcharity.org</a><a href="#" data-ar="123 طريق الخير، واشنطن" data-en="123 Charity Road, Washington">123 طريق الخير، واشنطن</a></div>
+      <div><h4 data-ar="النشرة" data-en="Newsletter">النشرة</h4><p data-ar="احصل على آخر التحديثات والتقارير." data-en="Get updates and reports in your inbox.">احصل على آخر التحديثات والتقارير.</p><form class="newsletter"><input type="email" placeholder="Email address" /><button type="button">→</button></form><div class="socials"><a>f</a><a>x</a><a>in</a><a>▶</a></div></div>
+    </div>
+    <div class="shell footer-bottom"><span data-ar="© 2026 رُؤى الأمل. جميع الحقوق محفوظة." data-en="© 2026 Ways of Hope. All rights reserved.">© 2026 رُؤى الأمل. جميع الحقوق محفوظة.</span><a href="#top" data-ar="العودة للأعلى" data-en="Back to top">العودة للأعلى</a></div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
